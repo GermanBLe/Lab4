@@ -68,9 +68,18 @@ again:
             count2++;
         }
     }
+    for (i = 1; i < n; i++)
+    {
+        if (a[i] > 3)
+        {
+            a[i]++;
+        }
+    }
     cout << " Amount of + elements:" << count1 << endl;
     cout << " Amount of - elements:" << count << endl;
     cout << " Amount of numbers multiples of 2:" << count2 << endl;
+    for (i = 0; i < n; i++)
+        cout << "a[" << i << "]=" << a[i] << endl;
     
         
     cin;
